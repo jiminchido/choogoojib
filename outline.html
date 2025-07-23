@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="옛날 시인들이 쓴 유명한 시 가운데서 학생들이 본받을 만한 좋은 구절만을 뽑아놓은 작자 미상의 한자교재">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8G3N4HK389"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8G3N4HK389');
+    </script>
+    <title>추구집 목차 - 각 구절이 5언 절구로 이루어진 한자교재</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; /* 한국어 가독성 좋은 폰트 추가 */
+            background-image: url('outline.jpg');
+            background-size: cover; /* 이미지가 전체 화면을 덮도록 설정 */
+            background-position: center;
+            background-attachment: fixed; /* 배경 이미지가 스크롤과 함께 움직이지 않도록 고정 */
+            min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정하여 내용이 적어도 배경이 꽉 차게 */
+            display: flex; /* Flexbox를 사용하여 전체 레이아웃 제어 */
+            flex-direction: column; /* 세로 방향으로 아이템 정렬 */
+            align-items: center; /* 가로축 중앙 정렬 */
+            overflow-x: hidden; /* 가로 스크롤 방지 */
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 50px;
+            margin-bottom: 30px; /* 제목 아래 여백 조절 */
+            color: #4F4F4F; /* 제목 색상 조정 */
+            text-align: center; /* 제목 중앙 정렬 */
+            width: 100%; /* 너비를 100%로 설정하여 중앙 정렬이 잘 적용되도록 */
+        }
+
+        a {
+            text-decoration-line: none;
+            color: #C12DFF; /* 링크 기본 색상 유지 */
+        }
+
+        /* 버튼 컨테이너 - 버튼들을 그룹화하고 정렬하기 위해 사용 */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap; /* 버튼들이 화면 크기에 맞춰 자동으로 다음 줄로 넘어가도록 */
+            justify-content: center; /* 버튼들을 가운데 정렬 */
+            align-items: center;
+            width: 90%; /* 컨테이너 너비 제한하여 너무 넓게 퍼지지 않도록 */
+            max-width: 900px; /* 최대 너비 설정 */
+            margin-bottom: 50px; /* 컨테이너 아래 여백 */
+        }
+
+        /* 버튼 기본 스타일 */
+        .btn {
+            border: 1px solid; /* 경계선 유지 */
+            background-color: #EBFBFF;
+            color: black;
+            padding: 15px 25px; /* 패딩 조정 */
+            font-size: 18px; /* 기본 글자 크기 조정 */
+            cursor: pointer;
+            border-radius: 15px;
+            margin: 10px; /* 버튼 간 간격 조정 */
+            min-width: 120px; /* 버튼 최소 너비 설정 (텍스트가 짧아도 일관된 크기 유지) */
+            text-align: center; /* 버튼 텍스트 중앙 정렬 */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 은은한 그림자 추가 */
+            transition: all 0.3s ease; /* 호버 효과를 위한 부드러운 전환 */
+            display: flex; /* flex를 사용하여 a 태그 내부의 텍스트도 중앙 정렬 */
+            justify-content: center;
+            align-items: center;
+            height: 60px; /* 버튼 높이 고정 */
+        }
+
+        .btn:hover {
+            opacity: 0.8; /* 호버 시 약간 투명하게 */
+            transform: translateY(-2px); /* 살짝 위로 뜨는 효과 */
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 진하게 */
+        }
+
+        /* 각 버튼 색상 */
+        .success { border-color: #04AA6D; color: green; }
+        .success:hover { background-color: #04AA6D; color: white; }
+
+        .info { border-color: #2196F3; color: dodgerblue; }
+        .info:hover { background: #2196F3; color: white; }
+
+        .warning { border-color: #ff9800; color: orange; }
+        .warning:hover { background: #ff9800; color: white; }
+
+        .danger { border-color: #f44336; color: red; }
+        .danger:hover { background: #f44336; color: white; }
+
+        .default { border-color: black; color: black; }
+        .default:hover { background: #e7e7e7; color: black; } /* 호버 시 글자색을 black으로 명시 */
+
+        /* 미디어 쿼리 */
+
+        /* 노트북 & 태블릿 가로 (해상도 1024px ~ 1279px)*/
+        @media all and (min-width: 1024px) and (max-width: 1279px) {
+            h1 {
+                font-size: 45px;
+                margin-top: 40px;
+                margin-bottom: 25px;
+            }
+            .btn {
+                font-size: 17px;
+                padding: 12px 20px;
+                height: 55px;
+                min-width: 110px;
+            }
+        }
+
+        /* 태블릿 가로 & 세로 (해상도 768px ~ 1023px)*/
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            h1 {
+                font-size: 40px;
+                margin-top: 35px;
+                margin-bottom: 20px;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 10px 18px;
+                height: 50px;
+                min-width: 100px;
+                margin: 8px;
+            }
+            .button-container {
+                width: 95%; /* 태블릿에서 컨테이너 너비 확장 */
+            }
+        }
+
+        /* 모바일 가로 (해상도 480px ~ 767px)*/
+        @media all and (min-width: 480px) and (max-width: 767px) {
+            h1 {
+                font-size: 35px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            .btn {
+                font-size: 15px;
+                padding: 8px 15px;
+                height: 45px;
+                min-width: 90px;
+                margin: 7px;
+            }
+            .button-container {
+                width: 95%;
+            }
+        }
+
+        /* 모바일 세로 (해상도 ~ 479px)*/
+        @media all and (max-width: 479px) {
+            h1 {
+                font-size: 30px;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 6px 12px;
+                height: 40px;
+                min-width: 80px;
+                margin: 5px;
+                border-radius: 10px; /* 작은 화면에 더 잘 어울리도록 */
+            }
+            .button-container {
+                width: 100%; /* 가장 작은 화면에서는 컨테이너 너비 100% */
+                padding: 0 5px; /* 좌우 여백 추가 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"><h1>추 구 집</h1></a>
+
+    <div class="button-container">
+        <a href="contents-1.html"><button class="btn success">1편</button></a>
+        <a href="contents-2.html"><button class="btn info">2편</button></a>
+        <a href="contents-3.html"><button class="btn warning">3편</button></a>
+        <a href="contents-4.html"><button class="btn danger">4편</button></a>
+        <a href="contents-5.html"><button class="btn default">5편</button></a>
+        <a href="contents-6.html"><button class="btn success">6편</button></a>
+        <a href="contents-7.html"><button class="btn info">7편</button></a>
+        <a href="contents-8.html"><button class="btn warning">8편</button></a>
+    </div>
+
+</body>
+</html>

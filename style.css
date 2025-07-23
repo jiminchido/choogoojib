@@ -1,0 +1,324 @@
+/* 글로벌 스타일 및 기본 설정 */
+body {
+    font-family: "Arial", "Helvetica", sans-serif; /* 기본 폰트 설정 */
+    font-size: 15px; /* 기본 폰트 크기 */
+    margin: 0; /* body의 기본 마진 제거 */
+    padding: 20px; /* 전체 콘텐츠에 대한 패딩 */
+    line-height: 1.6; /* 텍스트 가독성을 위한 줄 간격 */
+    color: #333; /* 기본 텍스트 색상 */
+    -webkit-font-smoothing: antialiased; /* 폰트 안티앨리어싱 (렌더링 부드럽게) */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    color: #853C3C; /* 제목 색상 */
+    text-align: center; /* 가운데 정렬 */
+    margin-top: 40px; /* 상단 여백 */
+    margin-bottom: 30px; /* 하단 여백 */
+    font-size: 2.5em; /* 반응형을 고려한 상대적 크기 */
+}
+
+/* 사이드 네비게이션 바 */
+.sidenav {
+    height: 100%; /* 전체 높이 차지 */
+    width: 140px; /* 너비 고정 */
+    position: fixed; /* 고정 위치 */
+    z-index: 100; /* 다른 요소 위에 오도록 z-index 설정 (기존 1에서 변경) */
+    top: 0;
+    left: 0;
+    background-color: #FFF0F0; /* 배경색 (라벤더 블러쉬 계열) */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+    padding-top: 15px;
+    padding-bottom: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.sidenav a {
+    padding: 10px 8px; /* 상하 패딩 늘림, 좌우 패딩 고정 (기존 6px 8px 6px 0px에서 변경) */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 20px; /* 링크 폰트 크기 조정 (기존 30px에서 변경) */
+    color: #853C3C; /* 링크 색상 */
+    display: block; /* 블록 요소로 만들어 전체 영역 클릭 가능하게 */
+    transition: background-color 0.3s, color 0.3s; /* 호버 시 부드러운 전환 효과 */
+}
+
+.sidenav a:hover {
+    background-color: #F08080; /* 호버 시 배경색 변경 (연한 산호) */
+    color: white; /* 호버 시 글자색 흰색으로 변경 */
+}
+
+/* 메인 콘텐츠 영역 */
+.main {
+    margin-left: 140px; /* 사이드바 너비만큼 왼쪽 여백 */
+    padding: 20px 30px; /* 내부 여백 조정 (기존 0px 10px에서 변경) */
+    font-size: 1.1em; /* 기본 폰트 크기 대비 상대적 크기 (기존 28px에서 변경) */
+}
+
+/* 스크롤 투 탑 버튼 */
+#myBtn {
+    display: none; /* 기본 숨김 */
+    position: fixed; /* 고정 위치 */
+    bottom: 30px; /* 하단에서 띄움 (기존 20px에서 변경) */
+    right: 30px; /* 우측에서 띄움 */
+    z-index: 99; /* 다른 요소 위에 오도록 */
+    font-size: 16px; /* 폰트 크기 (기존 18px에서 변경) */
+    border: none;
+    outline: none;
+    background-color: #f44336; /* 배경색 (Red, 기존 색상 유지) */
+    color: white;
+    cursor: pointer;
+    padding: 12px 18px; /* 패딩 조정 (기존 15px에서 변경) */
+    border-radius: 50px; /* 원형 버튼 (기존 10px에서 변경) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
+    transition: background-color 0.3s, transform 0.3s; /* 호버 전환 효과 */
+}
+
+#myBtn:hover {
+    background-color: #d32f2f; /* 호버 시 더 진한 빨강 (기존 #555에서 변경) */
+    transform: translateY(-2px); /* 살짝 위로 뜨는 효과 */
+}
+
+/* 리셋 스타일 */
+* {
+    box-sizing: border-box; /* 모든 요소에 border-box 모델 적용 */
+}
+
+/* 슬라이드쇼 (이미지 갤러리) */
+.mySlides1, .mySlides2 {
+    display: none; /* 기본 숨김 */
+}
+
+/* 이미지는 .main 내부의 이미지에만 적용하도록 변경하거나, 필요시 특정 클래스를 부여하세요. */
+/* 광고 충돌을 피하기 위해 img 태그에 직접 적용하는 대신, 아래와 같이 .main img 처럼 범위를 제한하는 것이 좋습니다. */
+.main img { /* 메인 콘텐츠 영역 안의 이미지에만 적용 */
+    vertical-align: middle; /* 이미지 수직 정렬 */
+    max-width: 100%; /* 이미지가 부모 너비를 넘지 않도록 */
+    height: auto; /* 비율 유지 */
+    display: block; /* 이미지 아래 불필요한 여백 제거 */
+}
+
+.slideshow-container {
+    max-width: 900px; /* 슬라이드쇼 최대 너비 (기존 1000px에서 변경) */
+    position: relative;
+    margin: 40px auto; /* 상하 여백, 좌우 자동 (가운데 정렬) (기존 auto에서 변경) */
+    border-radius: 8px; /* 부드러운 모서리 */
+    overflow: hidden; /* 이미지 오버플로우 숨김 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 슬라이드쇼 컨테이너 그림자 */
+}
+
+/* 이전/다음 버튼 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* 정확한 수직 중앙 정렬 (기존 margin-top: -22px;에서 변경) */
+    width: auto;
+    padding: 18px 12px; /* 패딩 조정 (기존 16px에서 변경) */
+    color: white;
+    font-weight: bold;
+    font-size: 20px; /* 폰트 크기 조정 (기존 18px에서 변경) */
+    transition: background-color 0.6s ease, color 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+}
+
+.next {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* 호버 시 배경색 더 진하게 (기존 #f1f1f1에서 변경) */
+    color: white; /* 호버 시에도 글자색 유지 (기존 black에서 변경) */
+}
+
+/* 특정 텍스트 스타일 */
+#first {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2em; /* 상대적 크기 조정 (기존 고정 값에서 변경) */
+}
+
+.js {
+    color: red;
+    font-weight: bold; /* 중요성 강조 */
+}
+
+span {
+    color: blue;
+    font-weight: bold; /* 중요성 강조 */
+}
+
+/* !!! 중요 변경 사항: span, div 태그에 직접 적용하던 스타일을 클래스 선택자로 변경 !!! */
+/* 이제 이 스타일들은 .my-span-text, .my-div-content 클래스를 가진 요소에만 적용됩니다. */
+/* HTML에서 당신이 스타일을 적용하고 싶은 span, div 태그에 이 클래스들을 추가해야 합니다. */
+.my-span-text { /* 텍스트의 특정 부분 강조 */
+    font-size: 2em; /* body font-size에 대한 상대적 크기 (기존 32px에서 변경) */
+    color: blue;
+    display: inline-block; /* 마진/패딩 적용을 위해 */
+    margin-right: 5px; /* 단어 간 간격 */
+}
+
+.my-div-content { /* div 태그에 일괄 적용되던 스타일을 클래스로 변경 */
+    font-size: 1.5em; /* body font-size에 대한 상대적 크기 (기존 30px에서 변경) */
+    color: #800080; /* 보라색 */
+    margin-bottom: 10px; /* div 요소 간 간격 */
+}
+
+/* 'div2'는 HTML에 div2 태그가 존재하지 않으므로, 클래스나 data-* 속성으로 변경하는 것이 좋습니다. */
+/* 여기서는 예시로 .my-div2-content 클래스를 사용합니다. HTML에 <div class="my-div2-content"> 처럼 사용하세요. */
+.my-div2-content {
+    font-size: 1em; /* 기존 20px에서 상대적 크기 */
+    color: #000069;
+}
+
+
+.text_box {
+    text-align: center;
+    margin-top: 100px; /* 상단 여백 추가 (기존 margin-top 없음) */
+    margin-bottom: 100px;
+    padding: 3px; /* 내부 여백 */
+    background-color: #F5FFFA; /* 민트 크림 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 25px; /* 각 섹션 간의 간격 조정 (기존 5px에서 변경) */
+    padding: 3px; /* 내부 여백 늘림 (기존 20px에서 변경) */
+    border-top: 3px solid #FADCA5; /* 상단 테두리 */
+    border-radius: 8px; /* 곡률 크게 (기존 2px에서 변경) */
+    background-color: #FDF5E6; /* 오래된 레이스 */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+/* 테이블 스타일 */
+table {
+    border-collapse: separate; /* 셀 테두리 분리 유지 (기존 border-collapse: separate; 유지) */
+    border-spacing: 15px; /* 셀 간 간격 늘림 (기존 10px에서 변경) */
+    width: 100%; /* 테이블 너비를 부모 요소에 맞게 조정 (기존 80%에서 변경) */
+    max-width: 1500px; /* 최대 너비 설정 */
+    table-layout: auto; /* 내용에 따라 열 너비 자동 조절 (기존 fixed에서 변경) */
+    margin: 40px auto; /* 상하 여백, 좌우 자동 (가운데 정렬) */
+    background-color: white; /* 테이블 배경색 */
+    border-radius: 8px; /* 테이블 모서리 둥글게 */
+    overflow: hidden; /* 테두리 안쪽으로 그림자 및 둥근 모서리 적용 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 그림자 */
+}
+
+th, td {
+    border: 1px solid #D8BFD8; /* 셀 테두리 색상 (엉겅퀴 훈장, 기존 #BECDFF에서 변경) */
+    padding: 15px; /* 셀 안쪽 여백 늘림 (기존 10px에서 변경) */
+    text-align: left; /* 텍스트 왼쪽 정렬 (가독성 향상, 기존 center에서 변경) */
+    background-color: #F0F8FF; /* 앨리스 블루 (기존 #f1f1f1에서 변경) */
+    vertical-align: top; /* 셀 내용 상단 정렬 */
+}
+
+th {
+    background-color: #E6E6FA; /* 머리글 배경색 (라벤더, 기존 #f1f1f1에서 변경) */
+    font-weight: bold;
+    color: #444; /* 머리글 텍스트 색상 */
+    text-align: center; /* 머리글 텍스트는 가운데 정렬 유지 */
+}
+
+/* 반응형 미디어 쿼리 */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* 노트북 & 태블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+    .my-span-text {
+        font-size: 1.5em; /* body font-size에 대한 상대적 크기 */
+    }
+    .my-div-content {
+        font-size: 1.2em;
+    }
+    .my-div2-content {
+        font-size: 0.8em;
+    }
+}
+
+/* 태블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .my-span-text {
+        font-size: 1.3em;
+    }
+    .my-div-content {
+        font-size: 1em;
+    }
+    .my-div2-content {
+        font-size: 0.7em;
+    }
+}
+
+/* 모바일 가로 & 태블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .my-span-text {
+        font-size: 1.2em;
+    }
+    .my-div-content {
+        font-size: 0.9em;
+    }
+    .my-div2-content {
+        font-size: 0.6em;
+    }
+    /* 사이드바는 모바일에서 다르게 처리하는 것이 일반적입니다. */
+    /* 예를 들어, 모바일에서는 사이드바를 숨기고 햄버거 메뉴를 사용하거나, 위로 배치하는 등입니다. */
+    /* 현재 fixed 된 사이드바는 모바일에서 콘텐츠를 가릴 수 있습니다. */
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative; /* 고정 대신 상대 위치로 변경하여 콘텐츠 흐름을 방해하지 않음 */
+        padding-top: 0;
+        box-shadow: none;
+    }
+    .sidenav a {
+        float: left; /* 메뉴 항목을 가로로 배열 */
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+    .main {
+        margin-left: 0; /* 사이드바가 위로 올라가므로 왼쪽 마진 제거 */
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+    .my-span-text {
+        font-size: 1.1em;
+    }
+    .my-div-content {
+        font-size: 0.8em;
+    }
+    .my-div2-content {
+        font-size: 0.5em;
+    }
+    /* 모바일 가로와 동일하게 사이드바 처리 */
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 0;
+        box-shadow: none;
+    }
+    .sidenav a {
+        float: left;
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+    .main {
+        margin-left: 0;
+    }
+    /* 작은 화면에서 테이블 스크롤 가능하게 */
+    table {
+        display: block;
+        white-space: normal; /* 셀 내용이 줄바꿈되지 않도록 */
+    }
+    th, td {
+        min-width: 120px; /* 작은 화면에서 셀 최소 너비 설정 */
+    }
+}
