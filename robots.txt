@@ -1,0 +1,17 @@
+---
+layout: none
+---
+
+User-agent: Yeti
+Disallow: not-for-naver
+
+User-agent: Googlebot
+Disallow: not-for-naver
+
+User-agent: Bingbot
+Disallow: not-for-naver
+
+User-agent: Daum
+Disallow: not-for-naver
+
+Sitemap: https://jiminchido.github.io/choogoojib/sitemap_location.xml
