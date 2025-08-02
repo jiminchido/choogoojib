@@ -7,15 +7,14 @@ Host: api.indexnow.org
   "keyLocation": "https://jiminchido.github.io/choogoojib/58515c41051043c7a07e2c0cc990ae85.txt",
   "urlList": [
       "https://jiminchido.github.io/choogoojib/url1"
-      "https://jiminchido.github.io/choogoojib/outline.html/url2",
-      "https://jiminchido.github.io/choogoojib/index.html/url3",
-      "https://jiminchido.github.io/choogoojib/contents-1.html/url4"
-      "https://jiminchido.github.io/choogoojib/contents-2.html/url5"
-      "https://jiminchido.github.io/choogoojib/contents-3.html/url6"
-      "https://jiminchido.github.io/choogoojib/contents-4.html/url7"
-      "https://jiminchido.github.io/choogoojib/contents-5.html/url8"
-      "https://jiminchido.github.io/choogoojib/contents-6.html/url9"
-      "https://jiminchido.github.io/choogoojib/contents-7.html/url10"
-      "https://jiminchido.github.io/choogoojib/contents-8.html/url11"
+      "https://jiminchido.github.io/choogoojib/index.html/url2",
+      "https://jiminchido.github.io/choogoojib/contents-1.html/url3"
+      "https://jiminchido.github.io/choogoojib/contents-2.html/url4"
+      "https://jiminchido.github.io/choogoojib/contents-3.html/url5"
+      "https://jiminchido.github.io/choogoojib/contents-4.html/url6"
+      "https://jiminchido.github.io/choogoojib/contents-5.html/url7"
+      "https://jiminchido.github.io/choogoojib/contents-6.html/url8"
+      "https://jiminchido.github.io/choogoojib/contents-7.html/url9"
+      "https://jiminchido.github.io/choogoojib/contents-8.html/url10"
        ]
 }

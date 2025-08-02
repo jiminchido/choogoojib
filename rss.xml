@@ -10,27 +10,19 @@
         <generator>수동 생성</generator> <!--대부분 유료로 운영되는 것 같아서 내가 직접 만듬.-->
 
         <item>
-            <title>메인화면</title>
+            <title>추구집ㆍ한자책모음</title>
             <link>https://jiminchido.github.io/choogoojib/</link>
-            <description>목차를 클릭 할 수 있는 버튼이 있습니다.</description>
+            <description>추구집 목차에는 8개의 세부 제목과 한자책모음이 있습니다.</description>
             <pubDate>Tue, 24 Jul 2025 11:40:00 KST</pubDate>
             <guid isPermaLink="true">https://jiminchido.github.io/choogoojib/</guid>
         </item>
 
         <item>
-            <title>메인화면</title>
+            <title>추구집ㆍ한자책모음</title>
             <link>https://jiminchido.github.io/choogoojib/index.html</link>
-            <description>목차를 클릭 할 수 있는 버튼이 있습니다.</description>
+            <description>추구집 목차에는 8개의 세부 제목과 한자책모음이 있습니다.</description>
             <pubDate>Tue, 24 Jul 2025 11:40:00 KST</pubDate>
             <guid isPermaLink="true">https://jiminchido.github.io/choogoojib/index.html</guid>
-        </item>
-        
-        <item>
-            <title>추구집 목차</title>
-            <link>https://jiminchido.github.io/choogoojib/contents.html</link>
-            <description>추구집 목차에는 8개의 세부 제목이 있습니다.</description>
-            <pubDate>Tue, 24 Jul 2025 11:40:00 KST</pubDate>
-            <guid isPermaLink="true">https://jiminchido.github.io/choogoojib/contents.html</guid>
         </item>
 
         <item>
