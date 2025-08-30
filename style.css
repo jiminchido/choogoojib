@@ -3,7 +3,7 @@ body {
     font-family: "Arial", "Helvetica", sans-serif; /* 기본 폰트 설정 */
     font-size: 15px; /* 기본 폰트 크기 */
     margin: 0; /* body의 기본 마진 제거 */
-    padding: 20px; /* 전체 콘텐츠에 대한 패딩 */
+    padding: 0px; /* 전체 콘텐츠에 대한 패딩 */
     line-height: 1.6; /* 텍스트 가독성을 위한 줄 간격 */
     color: #333; /* 기본 텍스트 색상 */
     -webkit-font-smoothing: antialiased; /* 폰트 안티앨리어싱 (렌더링 부드럽게) */
@@ -13,9 +13,10 @@ body {
 h1 {
     color: #853C3C; /* 제목 색상 */
     text-align: center; /* 가운데 정렬 */
-    margin-top: 40px; /* 상단 여백 */
-    margin-bottom: 30px; /* 하단 여백 */
-    font-size: 2.5em; /* 반응형을 고려한 상대적 크기 */
+    margin-top: 10px; /* 상단 여백 */
+    margin-bottom: 10px; /* 하단 여백 */
+    margin-left: 800px;
+    font-size: 2em; /* 반응형을 고려한 상대적 크기 */
 }
 
 /* 사이드 네비게이션 바 */
@@ -182,7 +183,7 @@ p {
 
 .text_box {
     text-align: center;
-    margin-top: 100px; /* 상단 여백 추가 (기존 margin-top 없음) */
+    margin-top: 120px; /* 상단 여백 추가 (기존 margin-top 없음) */
     margin-bottom: 100px;
     padding: 3px; /* 내부 여백 */
     background-color: #F5FFFA; /* 민트 크림 */
