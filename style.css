@@ -2,7 +2,7 @@
 body {
     font-family: "Arial", "Helvetica", sans-serif; /* 기본 폰트 설정 */
     font-size: 15px; /* 기본 폰트 크기 */
-    margin: 0; /* body의 기본 마진 제거 */
+    margin: 0px; /* body의 기본 마진 제거 */
     padding: 0px; /* 전체 콘텐츠에 대한 패딩 */
     line-height: 1.6; /* 텍스트 가독성을 위한 줄 간격 */
     color: #333; /* 기본 텍스트 색상 */
@@ -13,10 +13,9 @@ body {
 h1 {
     color: #853C3C; /* 제목 색상 */
     text-align: center; /* 가운데 정렬 */
-    margin-top: 10px; /* 상단 여백 */
-    margin-bottom: 10px; /* 하단 여백 */
-    margin-left: 800px;
-    font-size: 2em; /* 반응형을 고려한 상대적 크기 */
+    margin-top: 40px; /* 상단 여백 */
+    margin-bottom: 30px; /* 하단 여백 */
+    font-size: 2.5em; /* 반응형을 고려한 상대적 크기 */
 }
 
 /* 사이드 네비게이션 바 */
@@ -25,8 +24,8 @@ h1 {
     width: 140px; /* 너비 고정 */
     position: fixed; /* 고정 위치 */
     z-index: 100; /* 다른 요소 위에 오도록 z-index 설정 (기존 1에서 변경) */
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 0px;
     background-color: #FFF0F0; /* 배경색 (라벤더 블러쉬 계열) */
     overflow-x: hidden; /* 가로 스크롤 방지 */
     padding-top: 15px;
@@ -51,9 +50,9 @@ h1 {
 
 /* 메인 콘텐츠 영역 */
 .main {
-    margin-left: 140px; /* 사이드바 너비만큼 왼쪽 여백 */
-    padding: 20px 30px; /* 내부 여백 조정 (기존 0px 10px에서 변경) */
-    font-size: 1.1em; /* 기본 폰트 크기 대비 상대적 크기 (기존 28px에서 변경) */
+    margin-left: 135px; /* 사이드바 너비만큼 왼쪽 여백 */
+    padding: 30px 5px; /* 내부 여백 조정 (기존 0px 10px에서 변경) */
+    font-size: 1em; /* 기본 폰트 크기 대비 상대적 크기 (기존 28px에서 변경) */
 }
 
 /* 스크롤 투 탑 버튼 */
@@ -183,8 +182,8 @@ p {
 
 .text_box {
     text-align: center;
-    margin-top: 120px; /* 상단 여백 추가 (기존 margin-top 없음) */
-    margin-bottom: 100px;
+    margin-top: 44px; /* 상단 여백 추가 (기존 margin-top 없음) */
+    margin-bottom: 44px;
     padding: 3px; /* 내부 여백 */
     background-color: #F5FFFA; /* 민트 크림 */
     border-radius: 8px;
