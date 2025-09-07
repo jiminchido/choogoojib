@@ -278,12 +278,13 @@ th {
         width: 100%;
         height: auto;
         position: relative; /* 고정 대신 상대 위치로 변경하여 콘텐츠 흐름을 방해하지 않음 */
-        padding-top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
         box-shadow: none;
     }
     .sidenav a {
         float: left; /* 메뉴 항목을 가로로 배열 */
-        font-size: 16px;
+        font-size: 18px;
         padding: 8px 10px;
     }
     .main {
@@ -306,17 +307,18 @@ th {
     .sidenav {
         width: 100%;
         height: auto;
-        position: relative;
-        padding-top: 0;
+        position: relative; /* 고정 대신 상대 위치로 변경하여 콘텐츠 흐름을 방해하지 않음 */
+        padding-top: 20px;
+        padding-bottom: 20px;
         box-shadow: none;
     }
     .sidenav a {
-        float: left;
-        font-size: 14px;
-        padding: 6px 8px;
+        float: left; /* 메뉴 항목을 가로로 배열 */
+        font-size: 18px;
+        padding: 8px 10px;
     }
     .main {
-        margin-left: 0;
+        margin-left: 0; /* 사이드바가 위로 올라가므로 왼쪽 마진 제거 */
     }
     /* 작은 화면에서 테이블 스크롤 가능하게 */
     table {
