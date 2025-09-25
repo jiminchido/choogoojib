@@ -24,7 +24,7 @@ h1 {
     width: 140px; /* 너비 고정 */
     position: fixed; /* 고정 위치 */
     z-index: 100; /* 다른 요소 위에 오도록 z-index 설정 (기존 1에서 변경) */
-    top: 92px;
+    top: 90px;
     left: 0px;
     background-color: #FFF0F0; /* 배경색 (라벤더 블러쉬 계열) */
     overflow-x: hidden; /* 가로 스크롤 방지 */
@@ -183,8 +183,8 @@ p {
 
 .text_box {
     text-align: center;
-    margin-top: 44px; /* 상단 여백 추가 (기존 margin-top 없음) */
-    margin-bottom: 44px;
+    margin-top: 84px; /* 상단 여백 추가 (기존 margin-top 없음) */
+    margin-bottom: 84px;
     padding: 3px; /* 내부 여백 */
     background-color: #F5FFFA; /* 민트 크림 */
     border-radius: 8px;
